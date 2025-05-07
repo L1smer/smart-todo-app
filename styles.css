@@ -47,6 +47,13 @@ body {
   margin: 0;
 }
 
+#task-list p {
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+  color: gray;
+}
+
 #task-list li {
   background: #f9f9f9;
   margin-bottom: 10px;

@@ -1,6 +1,10 @@
 const input = document.getElementById("task-input");
 const addTaskBtn = document.getElementById("add-task-btn");
 const list = document.getElementById("task-list");
+
+const noTasks = document.createElement("p");
+noTasks.textContent = "No tasks yet...";
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 function saveTasks() {
@@ -9,6 +13,14 @@ function saveTasks() {
 
 function renderTasks() {
   list.innerHTML = "";
+
+	if (tasks.length === 0) {
+    list.append(noTasks);
+  } else {
+    if (list.contains(noTasks)) {
+      noTasks.remove();
+    }
+  }
 
   tasks.forEach((taskObj) => {
     const li = document.createElement("li");
