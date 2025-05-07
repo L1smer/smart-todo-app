@@ -9,13 +9,14 @@ It was designed to practice and master:
 - Dynamic rendering based on memory (not direct DOM editing)
 - Flexbox-based layout
 - Basic UI/UX styling
+- **Data persistence using LocalStorage**
 
 ## Features
 
 - Add new tasks
 - Mark tasks as completed (with visual strike-through)
 - Delete tasks
-- Prevent long text from breaking layout
+- Tasks are automatically saved in LocalStorage (persist between page reloads)
 - Smooth and clean responsive design
 
 ## Technologies
@@ -23,6 +24,7 @@ It was designed to practice and master:
 - HTML5
 - CSS3 (Flexbox)
 - JavaScript (ES6+)
+- **LocalStorage API**
 
 ## Live Demo
 
